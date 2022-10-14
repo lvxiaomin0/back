@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvxiaomin.mapper.AttentionMapper">
+
+    <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.Attention">
+            <id property="attId" column="att_id" jdbcType="BIGINT"/>
+            <result property="attAuthorId" column="att_author_id" jdbcType="BIGINT"/>
+            <result property="attUserId" column="att_user_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        att_id,att_author_id,att_user_id
+    </sql>
+</mapper>

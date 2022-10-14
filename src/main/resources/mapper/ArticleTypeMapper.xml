@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvxiaomin.mapper.ArticleTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.ArticleType">
+            <id property="typeId" column="type_id" jdbcType="BIGINT"/>
+            <result property="articleNum" column="article_num" jdbcType="INTEGER"/>
+            <result property="typeCreateTime" column="type_create_time" jdbcType="TIMESTAMP"/>
+            <result property="typeDesc" column="type_desc" jdbcType="VARCHAR"/>
+            <result property="typeName" column="type_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        type_id,article_num,type_create_time,
+        type_desc,type_name
+    </sql>
+</mapper>

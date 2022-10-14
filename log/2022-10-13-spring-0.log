@@ -1,0 +1,599 @@
+2022-10-13 19:34:10.479  INFO 14968 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 14968 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 19:34:10.480  INFO 14968 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 19:34:10.514  INFO 14968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 19:34:10.514  INFO 14968 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 19:34:11.220  INFO 14968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 19:34:11.222  INFO 14968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 19:34:11.244  INFO 14968 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 19:34:11.763  INFO 14968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 19:34:11.770  INFO 14968 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 19:34:11.770  INFO 14968 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 19:34:11.832  INFO 14968 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 19:34:11.832  INFO 14968 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1317 ms
+2022-10-13 19:34:13.546  INFO 14968 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 19:34:13.579  INFO 14968 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 19:34:13.587  INFO 14968 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.606 seconds (JVM running for 4.745)
+2022-10-13 19:34:50.113  INFO 14968 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 19:34:50.114  INFO 14968 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 19:34:50.115  INFO 14968 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 19:34:50.287  INFO 14968 --- [http-nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 19:34:50.412  INFO 14968 --- [http-nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 19:34:50.460  WARN 14968 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:35:21.624  WARN 14968 --- [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:44:10.809  INFO 14968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 19:44:10.817  INFO 14968 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 19:44:15.506  INFO 18420 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 18420 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 19:44:15.507  INFO 18420 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 19:44:15.560  INFO 18420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 19:44:15.560  INFO 18420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 19:44:16.103  INFO 18420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 19:44:16.105  INFO 18420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 19:44:16.125  INFO 18420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 19:44:16.597  INFO 18420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 19:44:16.603  INFO 18420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 19:44:16.603  INFO 18420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 19:44:16.668  INFO 18420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 19:44:16.668  INFO 18420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1108 ms
+2022-10-13 19:44:18.147  INFO 18420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 19:44:18.179  INFO 18420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 19:44:18.187  INFO 18420 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.159 seconds (JVM running for 4.143)
+2022-10-13 19:44:29.578  INFO 18420 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 19:44:29.578  INFO 18420 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 19:44:29.579  INFO 18420 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 19:44:29.722  INFO 18420 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 19:44:29.816  INFO 18420 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 19:44:29.866  WARN 18420 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:45:30.370  WARN 18420 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:46:52.633  WARN 18420 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:47:14.054  WARN 18420 --- [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:48:00.779  INFO 18420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 19:48:00.789  INFO 18420 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 19:48:06.416  INFO 27220 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 27220 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 19:48:06.418  INFO 27220 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 19:48:06.472  INFO 27220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 19:48:06.472  INFO 27220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 19:48:07.147  INFO 27220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 19:48:07.149  INFO 27220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 19:48:07.170  INFO 27220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 19:48:07.808  INFO 27220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 19:48:07.819  INFO 27220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 19:48:07.819  INFO 27220 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 19:48:07.892  INFO 27220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 19:48:07.892  INFO 27220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1419 ms
+2022-10-13 19:48:09.663  INFO 27220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 19:48:09.699  INFO 27220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 19:48:09.708  INFO 27220 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.884 seconds (JVM running for 5.601)
+2022-10-13 19:48:16.502  INFO 27220 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 19:48:16.502  INFO 27220 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 19:48:16.503  INFO 27220 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 19:48:26.264  INFO 27220 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 19:48:26.821  INFO 27220 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 19:48:57.118  WARN 27220 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 19:49:11.803  INFO 27220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 19:49:11.812  INFO 27220 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 19:49:18.996  INFO 3544 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 3544 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 19:49:18.998  INFO 3544 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 19:49:19.038  INFO 3544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 19:49:19.039  INFO 3544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 19:49:19.657  INFO 3544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 19:49:19.658  INFO 3544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 19:49:19.679  INFO 3544 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 19:49:20.303  INFO 3544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 19:49:20.313  INFO 3544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 19:49:20.313  INFO 3544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 19:49:20.398  INFO 3544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 19:49:20.399  INFO 3544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1360 ms
+2022-10-13 19:49:22.074  INFO 3544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 19:49:22.111  INFO 3544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 19:49:22.120  INFO 3544 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.698 seconds (JVM running for 5.029)
+2022-10-13 19:49:30.348  INFO 28356 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 28356 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 19:49:30.349  INFO 28356 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 19:49:30.395  INFO 28356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 19:49:30.396  INFO 28356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 19:49:30.976  INFO 28356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 19:49:30.977  INFO 28356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 19:49:30.998  INFO 28356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 19:49:31.535  INFO 28356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 19:49:31.543  INFO 28356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 19:49:31.543  INFO 28356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 19:49:31.606  INFO 28356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 19:49:31.606  INFO 28356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1210 ms
+2022-10-13 19:49:33.244  INFO 28356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 19:49:33.280  INFO 28356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 19:49:33.288  INFO 28356 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.457 seconds (JVM running for 4.851)
+2022-10-13 19:49:45.381  INFO 28356 --- [http-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 19:49:45.382  INFO 28356 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 19:49:45.383  INFO 28356 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-13 19:49:59.717  INFO 28356 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 19:49:59.837  INFO 28356 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 19:50:21.750  WARN 28356 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: 用户名密码有误]
+2022-10-13 19:50:29.752  INFO 28356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 19:50:29.760  INFO 28356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 20:06:38.961  INFO 19636 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 19636 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 20:06:38.962  INFO 19636 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 20:06:39.005  INFO 19636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 20:06:39.005  INFO 19636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 20:06:39.584  INFO 19636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 20:06:39.585  INFO 19636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 20:06:39.606  INFO 19636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 20:06:40.150  INFO 19636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 20:06:40.156  INFO 19636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 20:06:40.156  INFO 19636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 20:06:40.221  INFO 19636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 20:06:40.221  INFO 19636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1216 ms
+2022-10-13 20:06:41.975  INFO 19636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 20:06:42.034  INFO 19636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 20:06:42.045  INFO 19636 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.578 seconds (JVM running for 4.69)
+2022-10-13 20:07:06.489  INFO 19636 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 20:07:06.489  INFO 19636 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 20:07:06.490  INFO 19636 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 20:07:06.656  INFO 19636 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 20:07:06.766  INFO 19636 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 20:07:42.907  WARN 19636 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: 用户名密码有误]
+2022-10-13 20:11:42.734  WARN 19636 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:12:30.489  INFO 19636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 20:12:30.494  INFO 19636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 20:12:35.976  INFO 17156 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 17156 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 20:12:35.977  INFO 17156 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 20:12:36.009  INFO 17156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 20:12:36.009  INFO 17156 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 20:12:36.513  INFO 17156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 20:12:36.514  INFO 17156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 20:12:36.533  INFO 17156 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 20:12:37.020  INFO 17156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 20:12:37.027  INFO 17156 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 20:12:37.027  INFO 17156 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 20:12:37.095  INFO 17156 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 20:12:37.095  INFO 17156 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1085 ms
+2022-10-13 20:12:38.632  INFO 17156 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 20:12:38.664  INFO 17156 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 20:12:38.672  INFO 17156 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.166 seconds (JVM running for 4.134)
+2022-10-13 20:12:41.120  INFO 17156 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 20:12:41.121  INFO 17156 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 20:12:41.121  INFO 17156 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-13 20:12:41.259  INFO 17156 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 20:12:41.354  INFO 17156 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 20:12:41.410  WARN 17156 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:12:52.738  WARN 17156 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:14:32.877  INFO 17156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 20:14:32.885  INFO 17156 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 20:14:37.367  INFO 24184 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 24184 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 20:14:37.368  INFO 24184 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 20:14:37.408  INFO 24184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 20:14:37.409  INFO 24184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 20:14:37.997  INFO 24184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 20:14:37.999  INFO 24184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 20:14:38.019  INFO 24184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 20:14:38.579  INFO 24184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 20:14:38.587  INFO 24184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 20:14:38.588  INFO 24184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 20:14:38.667  INFO 24184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 20:14:38.667  INFO 24184 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1258 ms
+2022-10-13 20:14:40.426  INFO 24184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 20:14:40.465  INFO 24184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 20:14:40.474  INFO 24184 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.571 seconds (JVM running for 4.747)
+2022-10-13 20:14:43.370  INFO 24184 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 20:14:43.370  INFO 24184 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 20:14:43.371  INFO 24184 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 20:14:50.245  INFO 24184 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 20:14:50.357  INFO 24184 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 20:15:14.510  WARN 24184 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s966ms953µs900ns).
+2022-10-13 20:16:12.102  WARN 24184 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s779ms146µs100ns).
+2022-10-13 20:16:40.596  WARN 24184 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:23:07.733  WARN 24184 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:23:11.070  INFO 24184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 20:23:11.075  INFO 24184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 20:23:16.129  INFO 13160 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 13160 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 20:23:16.130  INFO 13160 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 20:23:16.172  INFO 13160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 20:23:16.173  INFO 13160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 20:23:16.781  INFO 13160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 20:23:16.783  INFO 13160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 20:23:16.803  INFO 13160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 20:23:17.337  INFO 13160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 20:23:17.346  INFO 13160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 20:23:17.346  INFO 13160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 20:23:17.419  INFO 13160 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 20:23:17.419  INFO 13160 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1245 ms
+2022-10-13 20:23:19.044  INFO 13160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 20:23:19.080  INFO 13160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 20:23:19.089  INFO 13160 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.447 seconds (JVM running for 4.566)
+2022-10-13 20:23:28.930  INFO 13160 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 20:23:28.930  INFO 13160 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 20:23:28.931  INFO 13160 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 20:23:29.103  INFO 13160 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 20:23:29.213  INFO 13160 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 20:23:48.967  WARN 13160 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:24:17.123  INFO 13160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 20:24:17.130  INFO 13160 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 20:24:21.136  INFO 6356 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 6356 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 20:24:21.137  INFO 6356 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 20:24:21.176  INFO 6356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 20:24:21.177  INFO 6356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 20:24:21.822  INFO 6356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 20:24:21.823  INFO 6356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 20:24:21.844  INFO 6356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 20:24:22.402  INFO 6356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 20:24:22.409  INFO 6356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 20:24:22.410  INFO 6356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 20:24:22.482  INFO 6356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 20:24:22.483  INFO 6356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1306 ms
+2022-10-13 20:24:24.147  INFO 6356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 20:24:24.184  INFO 6356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 20:24:24.193  INFO 6356 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.55 seconds (JVM running for 4.623)
+2022-10-13 20:24:26.635  INFO 6356 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 20:24:26.635  INFO 6356 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 20:24:26.637  INFO 6356 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-13 20:24:31.607  INFO 6356 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 20:24:31.718  INFO 6356 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 20:25:01.848  WARN 6356 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m129ms18µs100ns).
+2022-10-13 20:25:01.881  WARN 6356 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 20:25:25.556  INFO 6356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 20:25:25.563  INFO 6356 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 20:25:29.903  INFO 13988 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 13988 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 20:25:29.904  INFO 13988 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 20:25:29.948  INFO 13988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 20:25:29.949  INFO 13988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 20:25:30.624  INFO 13988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 20:25:30.626  INFO 13988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 20:25:30.650  INFO 13988 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 20:25:31.227  INFO 13988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 20:25:31.235  INFO 13988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 20:25:31.235  INFO 13988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 20:25:31.319  INFO 13988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 20:25:31.319  INFO 13988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1369 ms
+2022-10-13 20:25:33.109  INFO 13988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 20:25:33.145  INFO 13988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 20:25:33.154  INFO 13988 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.727 seconds (JVM running for 4.826)
+2022-10-13 20:25:35.655  INFO 13988 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 20:25:35.655  INFO 13988 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 20:25:35.656  INFO 13988 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 20:25:38.653  INFO 13988 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 20:25:38.763  INFO 13988 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 20:25:49.303  WARN 13988 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: 邮箱不存在，请注册！]
+2022-10-13 20:25:53.622  INFO 13988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 20:25:53.632  INFO 13988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:17:31.605  INFO 25360 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 25360 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:17:31.606  INFO 25360 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:17:31.643  INFO 25360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:17:31.643  INFO 25360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:17:32.224  INFO 25360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:17:32.226  INFO 25360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:17:32.247  INFO 25360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:17:32.789  INFO 25360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:17:32.796  INFO 25360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:17:32.797  INFO 25360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:17:32.868  INFO 25360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:17:32.868  INFO 25360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1224 ms
+2022-10-13 21:17:34.491  INFO 25360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:17:34.528  INFO 25360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:17:34.536  INFO 25360 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.469 seconds (JVM running for 4.538)
+2022-10-13 21:17:53.217  INFO 25360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:17:53.217  INFO 25360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:17:53.218  INFO 25360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:17:53.399  INFO 25360 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:17:53.509  INFO 25360 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:17:53.568  WARN 25360 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: 邮箱不存在，请注册！]
+2022-10-13 21:22:18.856  INFO 25360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:22:18.864  INFO 25360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:22:23.538  INFO 17996 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 17996 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:22:23.539  INFO 17996 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:22:23.575  INFO 17996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:22:23.576  INFO 17996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:22:24.152  INFO 17996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:22:24.154  INFO 17996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:22:24.174  INFO 17996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:22:24.787  INFO 17996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:22:24.795  INFO 17996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:22:24.795  INFO 17996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:22:24.865  INFO 17996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:22:24.865  INFO 17996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1289 ms
+2022-10-13 21:22:26.560  INFO 17996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:22:26.596  INFO 17996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:22:26.605  INFO 17996 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.595 seconds (JVM running for 4.672)
+2022-10-13 21:22:29.668  INFO 17996 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:22:29.668  INFO 17996 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:22:29.669  INFO 17996 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:22:29.844  INFO 17996 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:22:29.954  INFO 17996 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:22:30.013  WARN 17996 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: 用户名或密码错误]
+2022-10-13 21:22:59.434  WARN 17996 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: 邮箱不存在，请注册！]
+2022-10-13 21:37:56.216  INFO 17996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:37:56.224  INFO 17996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:38:02.500  INFO 9028 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 9028 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:38:02.502  INFO 9028 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:38:02.571  INFO 9028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:38:02.572  INFO 9028 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:38:03.266  INFO 9028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:38:03.269  INFO 9028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:38:03.295  INFO 9028 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:38:03.886  INFO 9028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:38:03.894  INFO 9028 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:38:03.894  INFO 9028 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:38:03.968  INFO 9028 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:38:03.968  INFO 9028 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1395 ms
+2022-10-13 21:38:05.683  INFO 9028 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:38:05.727  INFO 9028 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:38:05.739  INFO 9028 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.792 seconds (JVM running for 4.882)
+2022-10-13 21:38:12.274  INFO 9028 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:38:12.274  INFO 9028 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:38:12.275  INFO 9028 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:38:12.448  INFO 9028 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:38:12.558  INFO 9028 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:38:12.613  WARN 9028 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 21:39:20.251  INFO 9028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:39:20.259  INFO 9028 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:39:23.756  INFO 6308 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 6308 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:39:23.757  INFO 6308 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:39:23.794  INFO 6308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:39:23.794  INFO 6308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:39:24.387  INFO 6308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:39:24.388  INFO 6308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:39:24.409  INFO 6308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:39:24.959  INFO 6308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:39:24.966  INFO 6308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:39:24.966  INFO 6308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:39:25.029  INFO 6308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:39:25.029  INFO 6308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1234 ms
+2022-10-13 21:39:26.653  INFO 6308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:39:26.690  INFO 6308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:39:26.698  INFO 6308 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.464 seconds (JVM running for 4.577)
+2022-10-13 21:40:00.736  INFO 6308 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:40:00.736  INFO 6308 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:40:00.737  INFO 6308 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:40:13.364  INFO 6308 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:40:13.475  INFO 6308 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:40:42.547  WARN 6308 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s71ms673µs300ns).
+2022-10-13 21:40:42.582  WARN 6308 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 21:40:42.940  INFO 6308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:40:42.946  INFO 6308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:40:45.900  INFO 13244 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 13244 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:40:45.901  INFO 13244 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:40:45.944  INFO 13244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:40:45.944  INFO 13244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:40:46.531  INFO 13244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:40:46.533  INFO 13244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:40:46.555  INFO 13244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:40:47.091  INFO 13244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:40:47.098  INFO 13244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:40:47.098  INFO 13244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:40:47.165  INFO 13244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:40:47.165  INFO 13244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1220 ms
+2022-10-13 21:40:48.940  INFO 13244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:40:48.977  INFO 13244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:40:48.986  INFO 13244 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.567 seconds (JVM running for 4.883)
+2022-10-13 21:41:03.868  INFO 13244 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:41:03.868  INFO 13244 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:41:03.869  INFO 13244 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:41:36.943  INFO 13244 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:41:37.057  INFO 13244 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:41:37.126  WARN 13244 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 21:41:43.093  INFO 13244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:41:43.101  INFO 13244 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:41:55.663  INFO 16604 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 16604 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:41:55.664  INFO 16604 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:41:55.705  INFO 16604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:41:55.705  INFO 16604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:41:56.325  INFO 16604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:41:56.327  INFO 16604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:41:56.349  INFO 16604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:41:56.888  INFO 16604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:41:56.895  INFO 16604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:41:56.896  INFO 16604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:41:56.959  INFO 16604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:41:56.960  INFO 16604 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1255 ms
+2022-10-13 21:41:58.601  INFO 16604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:41:58.638  INFO 16604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:41:58.646  INFO 16604 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.518 seconds (JVM running for 4.643)
+2022-10-13 21:42:06.024  INFO 16604 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:42:06.025  INFO 16604 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:42:06.026  INFO 16604 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:42:22.421  INFO 16604 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:42:22.942  INFO 16604 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:44:18.471  WARN 16604 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s928ms889µs600ns).
+2022-10-13 21:44:18.502  WARN 16604 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 21:46:13.947  INFO 16604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:46:13.954  INFO 16604 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:46:18.706  INFO 20196 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 20196 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:46:18.707  INFO 20196 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:46:18.742  INFO 20196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:46:18.742  INFO 20196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:46:19.332  INFO 20196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:46:19.334  INFO 20196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:46:19.355  INFO 20196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:46:19.895  INFO 20196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:46:19.903  INFO 20196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:46:19.903  INFO 20196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:46:19.963  INFO 20196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:46:19.963  INFO 20196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1220 ms
+2022-10-13 21:46:21.601  INFO 20196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:46:21.641  INFO 20196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:46:21.650  INFO 20196 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.446 seconds (JVM running for 4.538)
+2022-10-13 21:46:27.205  INFO 20196 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:46:27.205  INFO 20196 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:46:27.206  INFO 20196 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-13 21:46:34.710  INFO 20196 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:46:34.823  INFO 20196 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:50:37.027  INFO 20196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:50:37.034  INFO 20196 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:50:42.343  INFO 1756 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 1756 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:50:42.345  INFO 1756 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:50:42.383  INFO 1756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:50:42.384  INFO 1756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:50:42.855  INFO 1756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:50:42.857  INFO 1756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:50:42.875  INFO 1756 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:50:43.340  INFO 1756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:50:43.346  INFO 1756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:50:43.347  INFO 1756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:50:43.410  INFO 1756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:50:43.410  INFO 1756 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1025 ms
+2022-10-13 21:50:44.896  INFO 1756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:50:44.928  INFO 1756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:50:44.936  INFO 1756 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.021 seconds (JVM running for 3.954)
+2022-10-13 21:50:51.455  INFO 1756 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:50:51.455  INFO 1756 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:50:51.456  INFO 1756 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:50:51.580  WARN 1756 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.lvxiaomin.utils.AjaxJson com.lvxiaomin.controller.user.UserLoginController.userLogin(com.lvxiaomin.dto.UserDto) with 2 errors: [Field error in object 'userDto' on field 'userEmail': rejected value []; codes [NotEmpty.userDto.userEmail,NotEmpty.userEmail,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.userEmail,userEmail]; arguments []; default message [userEmail]]; default message [could not be empty]] [Field error in object 'userDto' on field 'userPassword': rejected value []; codes [NotEmpty.userDto.userPassword,NotEmpty.userPassword,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [userDto.userPassword,userPassword]; arguments []; default message [userPassword]]; default message [could not be empty]] ]
+2022-10-13 21:52:00.168  INFO 1756 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:52:00.269  INFO 1756 --- [http-nio-8081-exec-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:52:00.304  WARN 1756 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.javassist.NotFoundException: 邮箱可用！]
+2022-10-13 21:52:05.342  WARN 1756 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.javassist.NotFoundException: 邮箱可用！]
+2022-10-13 21:58:01.062  WARN 1756 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 21:58:34.284  WARN 1756 --- [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 21:59:08.733  INFO 1756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 21:59:08.740  INFO 1756 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 21:59:11.485  INFO 11744 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 11744 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 21:59:11.486  INFO 11744 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 21:59:11.520  INFO 11744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 21:59:11.520  INFO 11744 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 21:59:12.007  INFO 11744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 21:59:12.008  INFO 11744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 21:59:12.026  INFO 11744 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 21:59:12.488  INFO 11744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 21:59:12.494  INFO 11744 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 21:59:12.494  INFO 11744 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 21:59:12.558  INFO 11744 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 21:59:12.558  INFO 11744 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1038 ms
+2022-10-13 21:59:14.043  INFO 11744 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 21:59:14.075  INFO 11744 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 21:59:14.083  INFO 11744 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.017 seconds (JVM running for 4.221)
+2022-10-13 21:59:21.330  INFO 11744 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 21:59:21.330  INFO 11744 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 21:59:21.331  INFO 11744 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 21:59:21.473  INFO 11744 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 21:59:21.567  INFO 11744 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 21:59:21.615  WARN 11744 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 22:00:09.715  INFO 11744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 22:00:09.724  INFO 11744 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 22:00:14.228  INFO 23288 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 23288 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 22:00:14.229  INFO 23288 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 22:00:14.265  INFO 23288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 22:00:14.265  INFO 23288 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 22:00:14.862  INFO 23288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 22:00:14.863  INFO 23288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 22:00:14.888  INFO 23288 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-10-13 22:00:15.416  INFO 23288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 22:00:15.423  INFO 23288 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 22:00:15.424  INFO 23288 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 22:00:15.495  INFO 23288 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 22:00:15.496  INFO 23288 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1230 ms
+2022-10-13 22:00:17.085  INFO 23288 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 22:00:17.117  INFO 23288 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 22:00:17.124  INFO 23288 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.413 seconds (JVM running for 4.343)
+2022-10-13 22:00:31.539  INFO 32100 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 32100 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 22:00:31.540  INFO 32100 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 22:00:31.573  INFO 32100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 22:00:31.573  INFO 32100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 22:00:32.101  INFO 32100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 22:00:32.103  INFO 32100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 22:00:32.134  INFO 32100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2022-10-13 22:00:32.804  INFO 32100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 22:00:32.811  INFO 32100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 22:00:32.812  INFO 32100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 22:00:32.902  INFO 32100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 22:00:32.902  INFO 32100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1329 ms
+2022-10-13 22:00:34.646  INFO 32100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 22:00:34.696  INFO 32100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 22:00:34.709  INFO 32100 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.743 seconds (JVM running for 4.737)
+2022-10-13 22:00:38.272  INFO 32100 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 22:00:38.273  INFO 32100 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 22:00:38.273  INFO 32100 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-13 22:00:38.417  INFO 32100 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 22:00:38.515  INFO 32100 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 22:00:38.564  WARN 32100 --- [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 22:01:14.228  INFO 32100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 22:01:14.239  INFO 32100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 22:01:18.275  INFO 21624 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 21624 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 22:01:18.277  INFO 21624 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 22:01:18.314  INFO 21624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 22:01:18.314  INFO 21624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 22:01:18.897  INFO 21624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 22:01:18.899  INFO 21624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 22:01:18.921  INFO 21624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 22:01:19.483  INFO 21624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 22:01:19.493  INFO 21624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 22:01:19.493  INFO 21624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 22:01:19.584  INFO 21624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 22:01:19.584  INFO 21624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1269 ms
+2022-10-13 22:01:21.318  INFO 21624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 22:01:21.355  INFO 21624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 22:01:21.362  INFO 21624 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.654 seconds (JVM running for 4.783)
+2022-10-13 22:01:32.943  INFO 21624 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 22:01:32.944  INFO 21624 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 22:01:32.944  INFO 21624 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-10-13 22:01:33.131  INFO 21624 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 22:01:33.257  INFO 21624 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 22:02:01.095  WARN 21624 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s836ms978µs700ns).
+2022-10-13 22:02:53.485  WARN 21624 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-10-13 22:02:53.963  INFO 21624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 22:02:53.971  INFO 21624 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 22:02:58.530  INFO 12084 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 12084 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 22:02:58.532  INFO 12084 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 22:02:58.568  INFO 12084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 22:02:58.568  INFO 12084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 22:02:59.147  INFO 12084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 22:02:59.149  INFO 12084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 22:02:59.170  INFO 12084 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-10-13 22:02:59.703  INFO 12084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 22:02:59.711  INFO 12084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 22:02:59.711  INFO 12084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 22:02:59.770  INFO 12084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 22:02:59.771  INFO 12084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1203 ms
+2022-10-13 22:03:01.393  INFO 12084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 22:03:01.428  INFO 12084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 22:03:01.436  INFO 12084 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.436 seconds (JVM running for 4.512)
+2022-10-13 22:03:13.119  INFO 12084 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 22:03:13.119  INFO 12084 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 22:03:13.120  INFO 12084 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 22:03:13.291  INFO 12084 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 22:03:13.400  INFO 12084 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 22:04:00.613  WARN 12084 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [cn.dev33.satoken.exception.SaTokenException: 账号id不能为空]
+2022-10-13 22:04:01.013  INFO 12084 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 22:04:01.023  INFO 12084 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 22:04:05.618  INFO 18884 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 18884 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 22:04:05.619  INFO 18884 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 22:04:05.652  INFO 18884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 22:04:05.652  INFO 18884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 22:04:06.125  INFO 18884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 22:04:06.126  INFO 18884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 22:04:06.145  INFO 18884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 22:04:06.607  INFO 18884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 22:04:06.613  INFO 18884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 22:04:06.613  INFO 18884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 22:04:06.671  INFO 18884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 22:04:06.671  INFO 18884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1018 ms
+2022-10-13 22:04:08.176  INFO 18884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 22:04:08.208  INFO 18884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 22:04:08.216  INFO 18884 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.11 seconds (JVM running for 4.016)
+2022-10-13 22:04:11.444  INFO 18884 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 22:04:11.444  INFO 18884 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 22:04:11.445  INFO 18884 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 22:04:11.589  INFO 18884 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 22:04:11.684  INFO 18884 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 22:37:47.512  INFO 18884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 22:37:47.517  INFO 18884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-10-13 22:39:22.859  INFO 17852 --- [restartedMain] com.lvxiaomin.MelonApplication           : Starting MelonApplication using Java 1.8.0_321 on ImMing with PID 17852 (H:\Users\75494\Desktop\melon\target\classes started by 75494 in H:\Users\75494\Desktop\melon)
+2022-10-13 22:39:22.860  INFO 17852 --- [restartedMain] com.lvxiaomin.MelonApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-10-13 22:39:22.892  INFO 17852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-13 22:39:22.893  INFO 17852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-13 22:39:23.376  INFO 17852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-10-13 22:39:23.377  INFO 17852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-10-13 22:39:23.396  INFO 17852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2022-10-13 22:39:23.862  INFO 17852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-13 22:39:23.869  INFO 17852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 22:39:23.869  INFO 17852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-13 22:39:23.934  INFO 17852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-13 22:39:23.934  INFO 17852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1041 ms
+2022-10-13 22:39:25.458  INFO 17852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-13 22:39:25.490  INFO 17852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-13 22:39:25.497  INFO 17852 --- [restartedMain] com.lvxiaomin.MelonApplication           : Started MelonApplication in 3.118 seconds (JVM running for 4.12)
+2022-10-13 22:39:29.872  INFO 17852 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 22:39:29.872  INFO 17852 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 22:39:29.873  INFO 17852 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-10-13 22:39:30.027  INFO 17852 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 22:39:30.132  INFO 17852 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 22:39:37.081  WARN 17852 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.lvxiaomin.MyException.LoginException: 用户名或密码不正确]
+2022-10-13 22:39:51.492  WARN 17852 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.lvxiaomin.MyException.LoginException: 邮箱不存在]
+2022-10-13 23:04:50.123  INFO 17852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 23:04:50.130  INFO 17852 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

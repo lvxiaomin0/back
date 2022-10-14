@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvxiaomin.mapper.ArticleMapper">
+
+    <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.Article">
+            <id property="artId" column="art_id" jdbcType="BIGINT"/>
+            <result property="artComNum" column="art_com_num" jdbcType="INTEGER"/>
+            <result property="artCommentId" column="art_comment_id" jdbcType="BIGINT"/>
+            <result property="artContent" column="art_content" jdbcType="VARCHAR"/>
+            <result property="artCreTime" column="art_cre_time" jdbcType="TIMESTAMP"/>
+            <result property="artHotNum" column="art_hot_num" jdbcType="INTEGER"/>
+            <result property="artLikeNum" column="art_like_num" jdbcType="INTEGER"/>
+            <result property="artTitle" column="art_title" jdbcType="VARCHAR"/>
+            <result property="artTypeId" column="art_type_id" jdbcType="BIGINT"/>
+            <result property="artUserId" column="art_user_id" jdbcType="BIGINT"/>
+            <result property="artView" column="art_view" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        art_id,art_com_num,art_comment_id,
+        art_content,art_cre_time,art_hot_num,
+        art_like_num,art_title,art_type_id,
+        art_user_id,art_view
+    </sql>
+</mapper>

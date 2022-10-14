@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvxiaomin.mapper.CommentMultiMapper">
+
+    <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.CommentMulti">
+            <id property="comMultiId" column="com_multi_id" jdbcType="BIGINT"/>
+            <result property="comId" column="com_id" jdbcType="BIGINT"/>
+            <result property="comMultiContent" column="com_multi_content" jdbcType="VARCHAR"/>
+            <result property="comMultiTime" column="com_multi_time" jdbcType="TIMESTAMP"/>
+            <result property="comMultiUserId" column="com_multi_user_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        com_multi_id,com_id,com_multi_content,
+        com_multi_time,com_multi_user_id
+    </sql>
+</mapper>
