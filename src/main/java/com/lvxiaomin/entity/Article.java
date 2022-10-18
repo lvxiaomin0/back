@@ -6,6 +6,9 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Map;
+
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import lombok.Data;
 
 /**
@@ -70,7 +73,8 @@ public class Article implements Serializable {
      * 
      */
     private Integer artView;
-
+    @TableField(exist = false)
+    private Map<String,User> map;
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
 
@@ -138,4 +142,5 @@ public class Article implements Serializable {
         sb.append("]");
         return sb.toString();
     }
+
 }
