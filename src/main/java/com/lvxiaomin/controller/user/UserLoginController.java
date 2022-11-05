@@ -76,5 +76,6 @@ public class UserLoginController {
         userService.getUserName(userDto.getUserEmail());
         return AjaxJson.getSuccess();
 
+
     }
 }

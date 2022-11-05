@@ -1,21 +1,20 @@
 package com.lvxiaomin.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.lvxiaomin.dto.ArticleDto;
 import com.lvxiaomin.entity.Article;
 import com.lvxiaomin.entity.User;
+import com.lvxiaomin.mapper.ArticleMapper;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.ArticleService;
-import com.lvxiaomin.mapper.ArticleMapper;
-import com.lvxiaomin.vo.ArticleVo;
+import com.lvxiaomin.utils.AjaxJson;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 /**
 * @author Ming
@@ -44,6 +43,14 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
         }
         return articleList;
+    }
+
+    @Override
+    public Map<String, Article> addArticle(ArticleDto articleDto) {
+        Article article = new Article();
+        BeanUtils.copyProperties(articleDto,article);
+        articleMapper.insert(article);
+        return null;
     }
 
 

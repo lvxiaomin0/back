@@ -1,9 +1,11 @@
 package com.lvxiaomin.service;
 
+import com.lvxiaomin.dto.ArticleDto;
 import com.lvxiaomin.entity.Article;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
 * @author Ming
@@ -13,6 +15,8 @@ import java.util.List;
 public interface ArticleService extends IService<Article> {
     List<Article> getArticle();
 
+    Map<String,Article> addArticle(ArticleDto articleDto);
+    
 
 
 }
