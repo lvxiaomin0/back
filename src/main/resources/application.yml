@@ -52,3 +52,8 @@ spring:
     url: jdbc:mysql://localhost:3306/melon?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 81192
+
+#配置日志  log-impl:日志实现
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

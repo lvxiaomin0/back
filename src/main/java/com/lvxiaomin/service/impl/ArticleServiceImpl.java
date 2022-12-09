@@ -31,13 +31,17 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
     @Autowired
     private UserMapper userMapper;
 
-
+    /**
+     * 获取用户及其帖子
+     * @return List
+     */
     @Override
     public List<Article> getArticle() {
         List<Article> articleList = articleMapper.selectList(null);
         for (Article article : articleList) {
             User user = userMapper.selectById(article.getArtUserId());
             HashMap<String, User> map = new HashMap<>();
+            user.setUserPassword(null);
             map.put("user",user);
             article.setMap(map);
 
@@ -45,6 +49,11 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         return articleList;
     }
 
+    /**
+     * 添加新帖子
+     * @param articleDto artDto
+     * @return null
+     */
     @Override
     public Map<String, Article> addArticle(ArticleDto articleDto) {
         Article article = new Article();
