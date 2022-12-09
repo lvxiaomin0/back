@@ -1,0 +1,77 @@
+package com.lvxiaomin.entity;
+
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+import java.io.Serializable;
+import java.util.Date;
+import lombok.Data;
+
+/**
+ * 
+ * @TableName message
+ */
+@TableName(value ="message")
+@Data
+public class Message implements Serializable {
+    /**
+     * 用户id
+     */
+    @TableId(type = IdType.AUTO)
+    private Integer userId;
+
+    /**
+     * 留言内容
+     */
+    private String mContent;
+
+    /**
+     * 留言时间
+     */
+    private Date mTime;
+
+    @TableField(exist = false)
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    public boolean equals(Object that) {
+        if (this == that) {
+            return true;
+        }
+        if (that == null) {
+            return false;
+        }
+        if (getClass() != that.getClass()) {
+            return false;
+        }
+        Message other = (Message) that;
+        return (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
+            && (this.getMContent() == null ? other.getMContent() == null : this.getMContent().equals(other.getMContent()))
+            && (this.getMTime() == null ? other.getMTime() == null : this.getMTime().equals(other.getMTime()));
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
+        result = prime * result + ((getMContent() == null) ? 0 : getMContent().hashCode());
+        result = prime * result + ((getMTime() == null) ? 0 : getMTime().hashCode());
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", userId=").append(userId);
+        sb.append(", mContent=").append(mContent);
+        sb.append(", mTime=").append(mTime);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
+    }
+}
