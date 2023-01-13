@@ -2,6 +2,7 @@ package com.lvxiaomin.mapper;
 
 import com.lvxiaomin.entity.Message;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author 75494
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2022-12-09 16:18:00
 * @Entity com.lvxiaomin.entity.Message
 */
+@Mapper
 public interface MessageMapper extends BaseMapper<Message> {
 
 }

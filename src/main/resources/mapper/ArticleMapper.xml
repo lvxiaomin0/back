@@ -22,6 +22,6 @@
         art_id,art_com_num,art_comment_id,
         art_content,art_cre_time,art_hot_num,
         art_like_num,art_title,art_type_id,
-        art_user_id,art_view
+        art_user_id,art_view,art_image
     </sql>
 </mapper>

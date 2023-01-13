@@ -4,12 +4,12 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Map;
-
-import jdk.nashorn.internal.ir.annotations.Ignore;
-import lombok.Data;
 
 /**
  * 
@@ -73,6 +73,12 @@ public class Article implements Serializable {
      * 
      */
     private Integer artView;
+    /**
+     *
+     */
+
+    private byte[] artImage;
+
     @TableField(exist = false)
     private Map<String,User> map;
     @TableField(exist = false)
@@ -100,7 +106,8 @@ public class Article implements Serializable {
             && (this.getArtTitle() == null ? other.getArtTitle() == null : this.getArtTitle().equals(other.getArtTitle()))
             && (this.getArtTypeId() == null ? other.getArtTypeId() == null : this.getArtTypeId().equals(other.getArtTypeId()))
             && (this.getArtUserId() == null ? other.getArtUserId() == null : this.getArtUserId().equals(other.getArtUserId()))
-            && (this.getArtView() == null ? other.getArtView() == null : this.getArtView().equals(other.getArtView()));
+            && (this.getArtView() == null ? other.getArtView() == null : this.getArtView().equals(other.getArtView()))
+            && (Arrays.equals(this.getArtImage(), other.getArtImage()));
     }
 
     @Override
@@ -118,6 +125,7 @@ public class Article implements Serializable {
         result = prime * result + ((getArtTypeId() == null) ? 0 : getArtTypeId().hashCode());
         result = prime * result + ((getArtUserId() == null) ? 0 : getArtUserId().hashCode());
         result = prime * result + ((getArtView() == null) ? 0 : getArtView().hashCode());
+        result = prime * result + (Arrays.hashCode(getArtImage()));
         return result;
     }
 
@@ -138,6 +146,7 @@ public class Article implements Serializable {
         sb.append(", artTypeId=").append(artTypeId);
         sb.append(", artUserId=").append(artUserId);
         sb.append(", artView=").append(artView);
+        sb.append(", artImage=").append(Arrays.toString(artImage));
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
