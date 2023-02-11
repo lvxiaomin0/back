@@ -8,7 +8,7 @@ import com.lvxiaomin.mapper.AdminMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
+/** 管理员
 * @author Ming
 * @description 针对表【admin】的数据库操作Service实现
 * @createDate 2022-08-07 15:33:52

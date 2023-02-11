@@ -1,13 +1,15 @@
 package com.lvxiaomin.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lvxiaomin.dto.ArticleDto;
 import com.lvxiaomin.entity.Article;
+import com.lvxiaomin.entity.ArticleImage;
 import com.lvxiaomin.entity.User;
+import com.lvxiaomin.mapper.ArticleImageMapper;
 import com.lvxiaomin.mapper.ArticleMapper;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.ArticleService;
-import com.lvxiaomin.utils.AjaxJson;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
+/** 文章业务
 * @author Ming
 * @description 针对表【article】的数据库操作Service实现
 * @createDate 2022-08-07 15:34:13
@@ -30,6 +32,9 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private ArticleImageMapper articleImageMapper;
 
     /**
      * 获取用户及其帖子
@@ -60,6 +65,16 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
         BeanUtils.copyProperties(articleDto,article);
         articleMapper.insert(article);
         return null;
+    }
+
+    @Override
+    public void addArticleImageId(Long id) {
+
+        Article article = new Article();
+
+        articleMapper.insert(article);
+
+
     }
 
 

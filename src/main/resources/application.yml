@@ -46,6 +46,9 @@ spring:
         # 连接池中的最小空闲连接
         min-idle: 0
 
+
+
+
   #数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -57,3 +60,16 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#腾讯云COS存储
+tencentCosUtil:
+  #开发者拥有的项目身份识别 ID，用于身份认证，可在 API 密钥管理 页面获取
+  secretId: AKIDA9uQhiV4NQEm58wUmpc9RTG6i4B2e2B4
+  #开发者拥有的项目身份密钥，可在 API 密钥管理 页面获取
+  secretKey: g6HCrHSN3WkiRu75nFSTIsFNGtISM1QZ
+  #存储桶名称格式，用户在使用 API、SDK 时，需要按照此格式填写存储桶名称
+  bucketName: "user-upload-1304472678"
+  #存储桶配置管理中访问域名的URL（格式：https://bucketName.cos.所在地域（例如：ap-nanjing）.myqcloud.com/）
+  accessUrl: https://user-upload-1304472678.cos.ap-chengdu.myqcloud.com/
+
+

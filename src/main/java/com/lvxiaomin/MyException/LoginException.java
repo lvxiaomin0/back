@@ -1,8 +1,8 @@
 package com.lvxiaomin.MyException;
 
-/**
+/** 登录自定义异常
  * @Author: Ming
- * @Date: 2022/10/13 22:29
+ * @Date: 2023/01/13 22:29
  * /**
  * * Method description
  * *

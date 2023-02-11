@@ -36,8 +36,7 @@ public class ArticleController {
     public AjaxJson addArticle(@RequestBody @Valid ArticleDto articleDto){
         //写入文章
         articleService.addArticle(articleDto);
-        //写入文章类型
-        articleTypeService.addArticleType(articleDto);
+
         return AjaxJson.getSuccessData(articleDto);
     }
 }

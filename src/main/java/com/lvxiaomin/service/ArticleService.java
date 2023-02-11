@@ -16,6 +16,8 @@ public interface ArticleService extends IService<Article> {
     List<Article> getArticle();
 
     Map<String,Article> addArticle(ArticleDto articleDto);
+
+    void addArticleImageId(Long id);
     
 
 

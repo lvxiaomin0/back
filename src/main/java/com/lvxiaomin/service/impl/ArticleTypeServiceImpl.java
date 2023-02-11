@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-/**
+/** 文章类型
 * @author Ming
 * @description 针对表【article_type】的数据库操作Service实现
 * @createDate 2022-08-07 15:34:19
