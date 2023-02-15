@@ -8,6 +8,7 @@ import com.qcloud.cos.http.HttpProtocol;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.region.Region;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
@@ -68,7 +69,9 @@ public class TencentCosUtil {
         }
         //创造临时文件名称
         String fileName = fileMul.getOriginalFilename();
-        String name = "/" + RandomStringUtils.randomNumeric(6) + System.currentTimeMillis() + System.nanoTime() + RandomStringUtils.randomNumeric(6) + fileName.substring(fileName.lastIndexOf('.'));
+        //String name = "/" + RandomStringUtils.randomNumeric(3) + System.currentTimeMillis() + System.nanoTime() + RandomStringUtils.randomNumeric(3) + fileName.substring(fileName.lastIndexOf('.'));
+        //String substringBefore = StringUtils.substringBefore(fileName, '.');
+        String name = "/"  + fileName;
         //创造临时文件图片
         temporaryFile = temporaryFile + name;
         FileOutputStream fos;

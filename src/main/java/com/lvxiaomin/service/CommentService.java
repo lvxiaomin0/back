@@ -1,7 +1,10 @@
 package com.lvxiaomin.service;
 
+import com.lvxiaomin.dto.CommentDto;
 import com.lvxiaomin.entity.Comment;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
 * @author Ming
@@ -10,6 +13,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface CommentService extends IService<Comment> {
 
-    int insertComment(Comment comment);
+    int insertComment(CommentDto commentDto);
+
+    List<Comment> getAllCommentList(int artId);
 
 }

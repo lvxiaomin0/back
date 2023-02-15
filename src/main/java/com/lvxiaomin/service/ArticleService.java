@@ -1,8 +1,7 @@
 package com.lvxiaomin.service;
 
-import com.lvxiaomin.dto.ArticleDto;
-import com.lvxiaomin.entity.Article;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lvxiaomin.entity.Article;
 
 import java.util.List;
 import java.util.Map;
@@ -15,9 +14,9 @@ import java.util.Map;
 public interface ArticleService extends IService<Article> {
     List<Article> getArticle();
 
-    Map<String,Article> addArticle(ArticleDto articleDto);
+    Map<String,Article> addArticle(Article article);
 
-    void addArticleImageId(Long id);
+
     
 
 

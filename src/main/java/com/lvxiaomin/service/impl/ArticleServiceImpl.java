@@ -1,12 +1,9 @@
 package com.lvxiaomin.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lvxiaomin.dto.ArticleDto;
 import com.lvxiaomin.entity.Article;
-import com.lvxiaomin.entity.ArticleImage;
 import com.lvxiaomin.entity.User;
-import com.lvxiaomin.mapper.ArticleImageMapper;
 import com.lvxiaomin.mapper.ArticleMapper;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.ArticleService;
@@ -33,8 +30,7 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
     @Autowired
     private UserMapper userMapper;
 
-    @Autowired
-    private ArticleImageMapper articleImageMapper;
+
 
     /**
      * 获取用户及其帖子
@@ -56,25 +52,13 @@ public class ArticleServiceImpl extends ServiceImpl<ArticleMapper, Article>
 
     /**
      * 添加新帖子
-     * @param articleDto artDto
+     * @param
      * @return null
      */
     @Override
-    public Map<String, Article> addArticle(ArticleDto articleDto) {
-        Article article = new Article();
-        BeanUtils.copyProperties(articleDto,article);
+    public Map<String, Article> addArticle(Article article) {
         articleMapper.insert(article);
         return null;
-    }
-
-    @Override
-    public void addArticleImageId(Long id) {
-
-        Article article = new Article();
-
-        articleMapper.insert(article);
-
-
     }
 
 

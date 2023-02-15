@@ -1,18 +1,24 @@
 package com.lvxiaomin.controller.services;
 
-import com.lvxiaomin.entity.Article;
-import com.lvxiaomin.service.ArticleImageService;
 import com.lvxiaomin.service.ArticleService;
 import com.lvxiaomin.utils.AjaxJson;
 import com.lvxiaomin.utils.TencentCosUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.Arrays;
+import java.util.List;
 
 /** 腾讯云存储
  * @Author: Ming
  * @Date: 2023/2/3 15:25
  */
+@Slf4j
 @RestController
 @RequestMapping("/upload")
 public class TencentUploadController {
@@ -20,15 +26,16 @@ public class TencentUploadController {
     @Autowired
     private ArticleService articleService;
 
-    @Autowired
-    private ArticleImageService articleImageService;
+
 
     @PostMapping("/updateFile")
-    public AjaxJson uploadFile(@RequestBody @RequestParam("file") MultipartFile[] file) throws Exception {
-        for (int i = 0; i < file.length; i++) {
-            String uploadFiles = TencentCosUtil.uploadFile(file[i]);
-            //需要写入imgurl,id
-            articleImageService.addArticleImage(uploadFiles);
+    public AjaxJson uploadFile(@RequestParam("file") MultipartFile[] file) throws Exception {
+
+        List<MultipartFile> multipartFiles = Arrays.asList(file);
+        for (int i = 0; i < multipartFiles.size(); i++) {
+            String uploadFiles = TencentCosUtil.uploadFile(multipartFiles.get(i));
+            //需要写入imgurl
+//            articleImageService.addArticleImage(uploadFiles);
 
         }
 //        articleService.addArticleImageId(null);

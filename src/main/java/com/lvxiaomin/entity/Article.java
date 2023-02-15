@@ -1,9 +1,6 @@
 package com.lvxiaomin.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -42,6 +39,7 @@ public class Article implements Serializable {
     /**
      * 
      */
+    @TableField(fill = FieldFill.INSERT)
     private Date artCreTime;
 
     /**
@@ -77,7 +75,7 @@ public class Article implements Serializable {
      *
      */
 
-    private Long artImageId;
+    private String artImage;
 
     @TableField(exist = false)
     private Map<String,User> map;
@@ -107,7 +105,7 @@ public class Article implements Serializable {
             && (this.getArtTypeId() == null ? other.getArtTypeId() == null : this.getArtTypeId().equals(other.getArtTypeId()))
             && (this.getArtUserId() == null ? other.getArtUserId() == null : this.getArtUserId().equals(other.getArtUserId()))
             && (this.getArtView() == null ? other.getArtView() == null : this.getArtView().equals(other.getArtView()))
-                && (this.getArtImageId() == null ? other.getArtImageId() == null : this.getArtImageId().equals(other.getArtImageId()));
+                && (this.getArtImage() == null ? other.getArtImage() == null : this.getArtImage().equals(other.getArtImage()));
     }
 
     @Override
@@ -125,7 +123,7 @@ public class Article implements Serializable {
         result = prime * result + ((getArtTypeId() == null) ? 0 : getArtTypeId().hashCode());
         result = prime * result + ((getArtUserId() == null) ? 0 : getArtUserId().hashCode());
         result = prime * result + ((getArtView() == null) ? 0 : getArtView().hashCode());
-        result = prime * result + ((getArtImageId() == null) ? 0 : getArtImageId().hashCode());
+        result = prime * result + ((getArtImage() == null) ? 0 : getArtImage().hashCode());
         return result;
     }
 
@@ -146,7 +144,7 @@ public class Article implements Serializable {
         sb.append(", artTypeId=").append(artTypeId);
         sb.append(", artUserId=").append(artUserId);
         sb.append(", artView=").append(artView);
-        sb.append(", artImageId=").append(artImageId);
+        sb.append(", artImageId=").append(artImage);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();
