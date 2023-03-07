@@ -45,14 +45,18 @@ spring:
         max-idle: 10
         # 连接池中的最小空闲连接
         min-idle: 0
-
+  #163邮箱配置
+  mail:
+    host: smtp.163.com
+    username: lvxiaomin2021@163.com
+    password: DIVRDGQBDKKUMCPF
 
 
 
   #数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/melon?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://42.192.90.40:3306/melon?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 81192
 

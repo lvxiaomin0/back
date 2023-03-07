@@ -7,12 +7,10 @@ import com.qcloud.cos.auth.COSCredentials;
 import com.qcloud.cos.http.HttpProtocol;
 import com.qcloud.cos.model.PutObjectRequest;
 import com.qcloud.cos.region.Region;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
@@ -23,7 +21,7 @@ import java.util.Date;
  * @Date: 2023/2/1 20:46
  */
 @Component
-public class TencentCosUtil {
+public class  TencentCosUtil {
 
     private static String secretId;
     private static String secretKey;
@@ -95,7 +93,8 @@ public class TencentCosUtil {
         COSClient cosClient = new COSClient(cred, clientConfig);
         //格式化时间
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-        PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, temporaryFile + sdf.format(new Date()) + name, file);
+        PutObjectRequest putObjectRequest = new PutObjectRequest(bucketName, temporaryFile + sdf.format(new Date())
+                + name, file);
         cosClient.putObject(putObjectRequest);
         String saveUrl = accessUrl + putObjectRequest.getKey();
         // 删除用户上传临时文件

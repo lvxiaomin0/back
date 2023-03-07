@@ -17,7 +17,14 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-<!--        随机数工具-->
+
+        <!--邮箱验证SDK-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+
+        <!--        随机数工具-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>

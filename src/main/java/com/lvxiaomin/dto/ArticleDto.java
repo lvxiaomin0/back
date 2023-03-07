@@ -36,7 +36,6 @@ public class ArticleDto implements Serializable {
     @JsonProperty(value = "artUserId")
     private Long artUserId; //用户id
 
-
     @JsonProperty(value = "artView")
     private Integer artView; //浏览量
 

@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
 public class GlobalException {
 
     // 全局异常拦截（拦截项目中的所有异常）
-    @ResponseBody
-    @ExceptionHandler
+//    @ResponseBody
+//    @ExceptionHandler
     public AjaxJson handlerException(Exception e, HttpServletRequest request, HttpServletResponse response)
             throws Exception {
 
