@@ -22,6 +22,12 @@ public class ArticleTypeServiceImpl extends ServiceImpl<ArticleTypeMapper, Artic
     @Autowired
     private ArticleTypeMapper articleTypeMapper;
 
+
+    /**
+     * 写入文章类型
+     * @param articleDto articleDto
+     * @return null
+     */
     @Override
     public Map<String, ArticleType> addArticleType(ArticleDto articleDto) {
         ArticleType articleType = new ArticleType();

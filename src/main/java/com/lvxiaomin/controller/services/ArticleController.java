@@ -17,7 +17,7 @@ import java.util.List;
  * @Date: 2022/10/17 10:02
  */
 @RestController
-@RequestMapping("service")
+@RequestMapping("/service")
 public class ArticleController {
 
     @Autowired
@@ -59,5 +59,11 @@ public class ArticleController {
         articleService.addArticle(article);
 
         return AjaxJson.getSuccess();
+    }
+
+    @GetMapping("/get-particle")
+    public AjaxJson getArticleById(int artId){
+        List<Article> articleById = articleService.getArticleById(artId);
+        return AjaxJson.getSuccessData(articleById);
     }
 }

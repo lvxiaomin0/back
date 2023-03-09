@@ -1,22 +1,20 @@
 package com.lvxiaomin.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lvxiaomin.dto.CommentDto;
 import com.lvxiaomin.entity.Article;
+import com.lvxiaomin.entity.Comment;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.mapper.ArticleMapper;
+import com.lvxiaomin.mapper.CommentMapper;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.CommentService;
-import com.lvxiaomin.entity.Comment;
-import com.lvxiaomin.mapper.CommentMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
@@ -51,14 +49,27 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment>
         Comment comment = new Comment();
         BeanUtils.copyProperties(commentDto,comment);
         int insert = commentMapper.insert(comment);
+        Long ArtId = commentDto.getComArtId();
+        //查询对应文章id对应评论数量
+        LambdaQueryWrapper<Comment> commentWrapper = new LambdaQueryWrapper<>();
+        commentWrapper.eq(Comment::getComArtId,ArtId);
+        int artCommetCount = Math.toIntExact(commentMapper.selectCount(commentWrapper));
+
+        //更新文章评论量
+        LambdaUpdateWrapper<Article> updateWrapper = new LambdaUpdateWrapper<>();
+        updateWrapper.eq(Article::getArtId,ArtId);
+
+        Article article = new Article();
+        article.setArtComNum(artCommetCount);
+        articleMapper.update(article,updateWrapper);
         return insert;
 
     }
 
     /**
      * 通过文章id 查询所有评论
-     * @param artId
-     * @return
+     * @param artId artId
+     * @return commentList
      */
     @Override
     public List<Comment> getAllCommentList(int artId) {
