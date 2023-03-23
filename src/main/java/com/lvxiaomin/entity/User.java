@@ -1,10 +1,9 @@
 package com.lvxiaomin.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
+import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
-import lombok.Data;
 
 /**
  * 
@@ -78,7 +77,7 @@ public class User implements Serializable {
      * 
      */
     @TableField(fill = FieldFill.INSERT)
-    private Date userTime;
+    private String userTime;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;

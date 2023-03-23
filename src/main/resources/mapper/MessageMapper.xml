@@ -5,12 +5,14 @@
 <mapper namespace="com.lvxiaomin.mapper.MessageMapper">
 
     <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.Message">
-            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <id property="mId" column="m_id" jdbcType="BIGINT"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
             <result property="mContent" column="m_content" jdbcType="VARCHAR"/>
             <result property="mTime" column="m_time" jdbcType="TIMESTAMP"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        user_id,m_content,m_time
+        m_id,user_id,m_content,
+        m_time
     </sql>
 </mapper>

@@ -1,6 +1,7 @@
 package com.lvxiaomin.service;
 
 import com.lvxiaomin.MyException.LoginException;
+import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lvxiaomin.dto.UserDto;
@@ -8,6 +9,8 @@ import com.lvxiaomin.utils.AjaxJson;
 import com.lvxiaomin.vo.CodeUpdatePwdVo;
 import com.lvxiaomin.vo.UserVo;
 import org.apache.ibatis.javassist.NotFoundException;
+
+import java.util.List;
 
 /**
 * @author Ming
@@ -22,15 +25,15 @@ public interface UserService extends IService<User> {
      * @return
      * @throws LoginException
      */
-    UserVo getUser(String email, String password) throws LoginException;
+    AjaxJson getUser(String email, String password);
 
     /**
      * 用户注册
-     * @param userDto
+     * @param userRegisterDto
      * @return
      * @throws NotFoundException
      */
-    boolean addUser(UserDto userDto) throws NotFoundException;
+    boolean addUser(UserRegisterDto userRegisterDto);
 
     /**
      * 判断用户是否存在
@@ -53,6 +56,16 @@ public interface UserService extends IService<User> {
      * @return
      */
     AjaxJson forgetUpdateSecret(CodeUpdatePwdVo codeUpdatePwdVo);
+
+    /**
+     * admin-getUserInfo
+     * @return list
+     */
+    List<User> adminGetUserInfo();
+
+
+
+
 
 
 

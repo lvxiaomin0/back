@@ -20,7 +20,11 @@ public class CommentsController {
     private CommentService commentService;
 
 
-
+    /**
+     * 评论写入
+     * @param commentDto commentDto
+     * @return AjaxJson
+     */
     @PostMapping("/set-comments")
     public AjaxJson setComments(@RequestBody CommentDto commentDto){
         int insertComment = commentService.insertComment(commentDto);

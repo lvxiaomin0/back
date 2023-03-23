@@ -2,6 +2,8 @@ package com.lvxiaomin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lvxiaomin.entity.Article;
+import com.lvxiaomin.utils.AjaxJson;
+import com.lvxiaomin.vo.UpdateArtLikeNumVo;
 
 import java.util.List;
 import java.util.Map;
@@ -34,8 +36,18 @@ public interface ArticleService extends IService<Article> {
      */
     List<Article> getArticleById(int id);
 
+    /**
+     * 文章热度增加
+     * @param artId
+     * @return
+     */
+    AjaxJson updateArtHotAndArtView(int artId);
 
-    
-
+    /**
+     * 用户喜欢文章量
+     * @param updateArtLikeNumVo updateArtLikeNumVo
+     * @return
+     */
+    AjaxJson updateArtLikeNum(UpdateArtLikeNumVo updateArtLikeNumVo);
 
 }

@@ -40,7 +40,7 @@ public class Article implements Serializable {
      * 
      */
     @TableField(fill = FieldFill.INSERT)
-    private Date artCreTime;
+    private String artCreTime;
 
     /**
      * 

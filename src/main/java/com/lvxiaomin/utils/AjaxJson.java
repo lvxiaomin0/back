@@ -4,6 +4,9 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.List;
+/**
+ *
+ */
 @Data
 public class AjaxJson implements Serializable {
 
@@ -25,14 +28,7 @@ public class AjaxJson implements Serializable {
 
     public Long dataCount;    // 数据总数，用于分页
 
-    /**
-     * 返回code
-     *
-     * @return
-     */
-    public int getCode() {
-        return this.code;
-    }
+
 
     /**
      * 给msg赋值，连缀风格

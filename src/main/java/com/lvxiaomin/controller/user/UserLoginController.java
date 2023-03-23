@@ -3,8 +3,11 @@ package com.lvxiaomin.controller.user;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.json.JSONObject;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lvxiaomin.MyException.LoginException;
+import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.service.UserService;
 import com.lvxiaomin.utils.AjaxJson;
@@ -12,9 +15,11 @@ import com.lvxiaomin.dto.UserDto;
 import com.lvxiaomin.utils.TencentCosUtil;
 import com.lvxiaomin.vo.UpdateUserVo;
 import com.lvxiaomin.vo.UserVo;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.javassist.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,6 +29,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class UserLoginController {
 
     @Autowired
@@ -35,32 +41,33 @@ public class UserLoginController {
      * @return
      */
     @RequestMapping("/login")
-    public AjaxJson userLogin(@RequestBody @Valid UserDto userDto) throws LoginException {
-        UserVo userVo = userService.getUser(userDto.getUserEmail(), userDto.getUserPassword());
-        if (userVo.getUser().getUserEmail().equals(userDto.getUserEmail()) &&
-                userVo.getUser().getUserPassword().equals(userDto.getUserPassword())){
-            StpUtil.login(userVo.getUser().getUserId());
-            //返回token到前端
+    public AjaxJson userLogin(@RequestBody @Valid UserDto userDto) {
+        //加密
+        String userPwdMd5 = DigestUtils.md5DigestAsHex(userDto.getUserPassword().getBytes());
+        AjaxJson user = userService.getUser(userDto.getUserEmail(), userPwdMd5);
+        int code = user.getCode();
+        if (code == 5002 ||code == 5003){
+            return AjaxJson.getErrorData(user);
+        }
+            User data = (User) user.getData();
+            StpUtil.login(data.getUserId());
             SaTokenInfo tokenInfo = StpUtil.getTokenInfo();
-            userVo.getUser().setUserPassword(null);
             Map<String, Object> map = new HashMap<>();
-            map.put("user",userVo.getUser());
+            map.put("user",data);
             map.put("tokenInfo",tokenInfo);
             return AjaxJson.getSuccessData(map);
-        }else {
-            return AjaxJson.getError();
-        }
+
 
     }
 
     /**
      * 用户注册
-     * @param userDto
+     * @param userRegisterDto
      * @return
      */
     @PostMapping("/register")
-    public AjaxJson register(@RequestBody @Valid UserDto userDto) throws NotFoundException {
-        boolean addUser = userService.addUser(userDto);
+    public AjaxJson register(@RequestBody @Valid UserRegisterDto userRegisterDto) {
+        boolean addUser = userService.addUser(userRegisterDto);
         if (addUser) {
             return AjaxJson.getSuccess("Register success!");
         } else {
@@ -85,7 +92,6 @@ public class UserLoginController {
     /**
      * 用户更新个人信息
      * @param userId
-     * @param userEmail
      * @param userName
      * @param userSex
      * @param userShow
@@ -99,8 +105,6 @@ public class UserLoginController {
     public AjaxJson updateUser(
             @RequestParam(value = "userId")
             int userId,
-            @RequestParam(value = "userEmail",required = false)
-            String userEmail,
             @RequestParam(value = "userName",required = false)
             String userName,
             @RequestParam(value = "userSex",required = false)
@@ -112,10 +116,8 @@ public class UserLoginController {
             @RequestParam(value = "userPhone",required = false)
             String userPhone,
             @RequestParam(value = "avatar",required = false) MultipartFile avatar) throws Exception {
-        /**
-         * 用户头像
-         */
 
+        //用户头像
         String userAvatar = null;
         if (userId != 0 && avatar!=null) {
             userAvatar = TencentCosUtil.uploadFile(avatar);
@@ -124,7 +126,6 @@ public class UserLoginController {
         User user = new User();
         updateUserVo.setUserId(userId);
         updateUserVo.setUserImg(userAvatar);
-        updateUserVo.setUserEmail(userEmail);
         updateUserVo.setUserName(userName);
         updateUserVo.setUserSex(userSex);
         updateUserVo.setUserShow(userShow);

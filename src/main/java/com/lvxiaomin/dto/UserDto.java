@@ -15,7 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class UserDto implements Serializable {
     /**
-     *
+     *用户邮箱
      */
     @NotEmpty(message = "could not be empty")
     @JsonProperty(value ="userEmail")
@@ -23,7 +23,7 @@ public class UserDto implements Serializable {
 
 
     /**
-     *
+     *用户密码
      */
     @NotEmpty(message = "could not be empty")
     @JsonProperty(value = "userPassword")

@@ -20,8 +20,6 @@ public class UpdateUserVo {
     @NotEmpty(message = "userId could not empty")
     int userId;
 
-    String userEmail;
-
     String userName;
 
     String userSex;

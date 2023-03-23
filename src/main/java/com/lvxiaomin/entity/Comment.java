@@ -36,7 +36,7 @@ public class Comment implements Serializable {
      * 
      */
     @TableField(fill = FieldFill.INSERT)
-    private Date comTime;
+    private String comTime;
 
     /**
      * 

@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.lvxiaomin.MyException.LoginException;
+import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.UserService;
@@ -18,9 +19,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
+import org.springframework.util.DigestUtils;
 
-import java.util.HashMap;
-import java.util.Optional;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**  用户服务
 * @author Ming
@@ -38,18 +40,17 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
     private StringRedisTemplate template;
 
     @Override
-    public UserVo getUser(String email, String password) throws LoginException {
+    public AjaxJson getUser(String email, String password) {
         LambdaQueryWrapper<User> lambdaQueryWrapper = new LambdaQueryWrapper<>();
             lambdaQueryWrapper.eq(email != null,User::getUserEmail,email);
             User user = userMapper.selectOne(lambdaQueryWrapper);
             if (user == null){
-                throw new LoginException("邮箱不存在");
-            } else if (!user.getUserPassword().equals(password)) {
-                throw new LoginException("用户名或密码不正确");
+                return AjaxJson.get(5002,"邮箱不存在");
+            } else if (!Objects.equals(user.getUserPassword(), password)) {
+                return AjaxJson.get(5003,"用户名或密码不正确");
             }else {
-                UserVo userVo = new UserVo();
-                userVo.setUser(user);
-                return userVo;
+                user.setUserPassword(null);
+                return AjaxJson.getSuccessData(user);
             }
 
     }
@@ -57,14 +58,16 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
 
     @Override
-    public boolean addUser(UserDto userDto) throws NotFoundException {
+    public boolean addUser(UserRegisterDto userRegisterDto){
+        String userPwdMd5 = DigestUtils.md5DigestAsHex(userRegisterDto.getUserPassword().getBytes());
+        userRegisterDto.setUserPassword(userPwdMd5);
         User user = new User();
-        BeanUtils.copyProperties(userDto,user);
+        BeanUtils.copyProperties(userRegisterDto,user);
         int insert = userMapper.insert(user);
         if (insert >=0){
             return true;
         }else {
-            throw new NotFoundException("用户注册失败！");
+            return false;
         }
 
     }
@@ -116,6 +119,22 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         if (!codeUpdatePwdVo.getSecurityCode().equals(codes)) return AjaxJson.getError("验证码错误");
 
         return null;
+    }
+
+
+    /**
+     * admin-getUserInfo
+     * @return userList
+     */
+    @Override
+    public List<User> adminGetUserInfo() {
+        List<User> userList = userMapper.selectList(null);
+        for (User user : userList) {
+            user.setUserPassword(null);
+
+
+        }
+        return userList;
     }
 }
 

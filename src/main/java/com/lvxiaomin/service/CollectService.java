@@ -2,6 +2,7 @@ package com.lvxiaomin.service;
 
 import com.lvxiaomin.entity.Collect;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.lvxiaomin.vo.CollectStatusVo;
 
 /**
 * @author Ming
@@ -10,4 +11,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface CollectService extends IService<Collect> {
 
+    /**
+     * 获取点赞原始状态
+     * @return
+     */
+    boolean getCollectStatus(CollectStatusVo collectStatusVo);
 }

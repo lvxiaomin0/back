@@ -13,7 +13,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.util.stream.Collectors;
 
-/**
+/**validate校验 异常统一捕捉处理类
  * @Author: Ming
  * @Date: 2023/3/2 22:28
  * validate校验 异常统一捕捉处理类

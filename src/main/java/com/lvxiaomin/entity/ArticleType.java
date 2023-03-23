@@ -29,7 +29,7 @@ public class ArticleType implements Serializable {
     /**
      * 
      */
-    private Date typeCreateTime;
+    private String typeCreateTime;
 
     /**
      * 

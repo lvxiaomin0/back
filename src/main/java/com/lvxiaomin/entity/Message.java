@@ -9,25 +9,30 @@ import java.util.Date;
 import lombok.Data;
 
 /**
- * 
+ *
  * @TableName message
  */
 @TableName(value ="message")
 @Data
 public class Message implements Serializable {
     /**
-     * 用户id
+     *
      */
     @TableId(type = IdType.AUTO)
-    private Integer userId;
+    private Long mId;
 
     /**
-     * 留言内容
+     * 用户id
+     */
+    private Long userId;
+
+    /**
+     * 内容
      */
     private String mContent;
 
     /**
-     * 留言时间
+     * 时间
      */
     private Date mTime;
 
@@ -46,15 +51,17 @@ public class Message implements Serializable {
             return false;
         }
         Message other = (Message) that;
-        return (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
-            && (this.getMContent() == null ? other.getMContent() == null : this.getMContent().equals(other.getMContent()))
-            && (this.getMTime() == null ? other.getMTime() == null : this.getMTime().equals(other.getMTime()));
+        return (this.getMId() == null ? other.getMId() == null : this.getMId().equals(other.getMId()))
+                && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
+                && (this.getMContent() == null ? other.getMContent() == null : this.getMContent().equals(other.getMContent()))
+                && (this.getMTime() == null ? other.getMTime() == null : this.getMTime().equals(other.getMTime()));
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
+        result = prime * result + ((getMId() == null) ? 0 : getMId().hashCode());
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
         result = prime * result + ((getMContent() == null) ? 0 : getMContent().hashCode());
         result = prime * result + ((getMTime() == null) ? 0 : getMTime().hashCode());
@@ -67,6 +74,7 @@ public class Message implements Serializable {
         sb.append(getClass().getSimpleName());
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
+        sb.append(", mId=").append(mId);
         sb.append(", userId=").append(userId);
         sb.append(", mContent=").append(mContent);
         sb.append(", mTime=").append(mTime);

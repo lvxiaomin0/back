@@ -7,7 +7,7 @@ import com.lvxiaomin.mapper.MessageMapper;
 import org.springframework.stereotype.Service;
 
 /** 留言板
-* @author 75494
+* @author Ming
 * @description 针对表【message】的数据库操作Service实现
 * @createDate 2022-12-09 16:18:00
 */
