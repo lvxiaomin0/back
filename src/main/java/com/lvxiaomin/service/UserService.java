@@ -1,13 +1,12 @@
 package com.lvxiaomin.service;
 
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.lvxiaomin.MyException.LoginException;
 import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
-import com.baomidou.mybatisplus.extension.service.IService;
-import com.lvxiaomin.dto.UserDto;
 import com.lvxiaomin.utils.AjaxJson;
 import com.lvxiaomin.vo.CodeUpdatePwdVo;
-import com.lvxiaomin.vo.UserVo;
+import com.lvxiaomin.vo.UpdateUserPwd;
 import org.apache.ibatis.javassist.NotFoundException;
 
 import java.util.List;
@@ -51,27 +50,27 @@ public interface UserService extends IService<User> {
     User updateUserInfo(User user);
 
     /**
-     * 忘记密码接口
+     * 忘记密码验证接口
      * @param codeUpdatePwdVo
      * @return
      */
     AjaxJson forgetUpdateSecret(CodeUpdatePwdVo codeUpdatePwdVo);
 
     /**
+     * 验证通过修改密码
+     * @param updateUserPwd
+     * @return
+     */
+    AjaxJson updateUserPwd(UpdateUserPwd updateUserPwd);
+
+
+
+
+    /**
      * admin-getUserInfo
      * @return list
      */
     List<User> adminGetUserInfo();
-
-
-
-
-
-
-
-
-
-
 
 
 

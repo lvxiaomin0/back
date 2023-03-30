@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvxiaomin.mapper.AnnouncementMapper">
+
+    <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.Announcement">
+            <id property="moId" column="mo_id" jdbcType="INTEGER"/>
+            <result property="moContent" column="mo_content" jdbcType="VARCHAR"/>
+            <result property="moTime" column="mo_time" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        mo_id,mo_content,mo_time
+    </sql>
+</mapper>

@@ -2,21 +2,14 @@ package com.lvxiaomin.controller.user;
 
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
-import cn.hutool.json.JSONObject;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.lvxiaomin.MyException.LoginException;
+import com.lvxiaomin.dto.UserDto;
 import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.service.UserService;
 import com.lvxiaomin.utils.AjaxJson;
-import com.lvxiaomin.dto.UserDto;
 import com.lvxiaomin.utils.TencentCosUtil;
 import com.lvxiaomin.vo.UpdateUserVo;
-import com.lvxiaomin.vo.UserVo;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.javassist.NotFoundException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
@@ -26,6 +19,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.validation.Valid;
 import java.util.HashMap;
 import java.util.Map;
+
 
 @RestController
 @RequestMapping("/user")

@@ -4,16 +4,13 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lvxiaomin.MyException.LoginException;
 import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.UserService;
-import com.lvxiaomin.dto.UserDto;
 import com.lvxiaomin.utils.AjaxJson;
 import com.lvxiaomin.vo.CodeUpdatePwdVo;
-import com.lvxiaomin.vo.UserVo;
-import org.apache.ibatis.javassist.NotFoundException;
+import com.lvxiaomin.vo.UpdateUserPwd;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -21,8 +18,9 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.util.DigestUtils;
 
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 
 /**  用户服务
 * @author Ming
@@ -111,14 +109,29 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
 
         //验证码过期校验
         ValueOperations<String, String> operations = template.opsForValue();
-        Long expire = operations.getOperations().getExpire(codeUpdatePwdVo.getSecurityCode());
-        if (0 == expire) return AjaxJson.getError("验证码已过期");
+        Long expire = operations.getOperations().getExpire("codes");
+        if (-1 == expire) return AjaxJson.getError("验证码已过期");
 
         //验证码正确性校验
         String codes = operations.get("codes");
-        if (!codeUpdatePwdVo.getSecurityCode().equals(codes)) return AjaxJson.getError("验证码错误");
+        if (!codeUpdatePwdVo.getSecurityCode().equals(codes)){
+            return AjaxJson.getError("验证码错误");
+        } else {
+            return AjaxJson.get(2000,"验证成功");
+        }
 
-        return null;
+
+    }
+
+    @Override
+    public AjaxJson updateUserPwd(UpdateUserPwd updateUserPwd) {
+        String userPwdMd5 = DigestUtils.md5DigestAsHex(updateUserPwd.getUserPassword().getBytes());
+        LambdaUpdateWrapper<User> updateWrapper = new LambdaUpdateWrapper<>();
+        updateWrapper.eq(User::getUserEmail,updateUserPwd.getUserEmail());
+        User user = new User();
+        user.setUserPassword(userPwdMd5);
+        int update = userMapper.update(user, updateWrapper);
+        return AjaxJson.get(update,"修改完成");
     }
 
 

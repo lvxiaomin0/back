@@ -20,8 +20,8 @@ import java.io.Serializable;
 public class CodeUpdatePwdVo implements Serializable {
 
     @NotNull(message = "could not be NotNUll")
-    @JsonProperty(value = "UserEmail")
-    String UserEmail;
+    @JsonProperty(value = "userEmail")
+    String userEmail;
 
     @NotNull(message = "could not be NotNUll")
     @JsonProperty(value = "securityCode")

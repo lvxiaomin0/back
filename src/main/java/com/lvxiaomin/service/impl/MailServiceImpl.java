@@ -4,12 +4,9 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.mapper.UserMapper;
 import com.lvxiaomin.service.MailService;
-import com.lvxiaomin.service.UserService;
 import com.lvxiaomin.utils.AjaxJson;
-import org.apache.ibatis.javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.data.redis.cache.RedisCache;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.mail.SimpleMailMessage;
@@ -18,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.IntStream;
 
 /** 忘记密码邮箱验证
  * @Author: Ming
@@ -55,6 +51,7 @@ public class MailServiceImpl implements MailService {
         //随机验证码
         String value = String.valueOf(new Random().nextInt(899999) + 100000);
         ValueOperations<String, String> valueOperations = template.opsForValue();
+
         //验证码存入Redis
         valueOperations.set("codes", value,10, TimeUnit.MINUTES);
 
@@ -82,6 +79,6 @@ public class MailServiceImpl implements MailService {
         //OK，万事俱备只欠发送
         mailSender.send(message);
 
-        return null;
+        return AjaxJson.getSuccess("验证码发送成功");
     }
 }

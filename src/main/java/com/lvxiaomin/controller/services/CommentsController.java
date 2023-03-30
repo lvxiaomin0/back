@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
+/**用户评论
  * @Author: Ming
  * @Date: 2023/2/14 14:46
  */
@@ -28,7 +28,7 @@ public class CommentsController {
     @PostMapping("/set-comments")
     public AjaxJson setComments(@RequestBody CommentDto commentDto){
         int insertComment = commentService.insertComment(commentDto);
-        return AjaxJson.getSuccess();
+        return AjaxJson.getSuccess(String.valueOf(insertComment));
     }
 
     /**

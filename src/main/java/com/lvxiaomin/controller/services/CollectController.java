@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-/**
+/**用户点赞
  * @Author: Ming
  * @Date: 2023/3/14 15:41
  */

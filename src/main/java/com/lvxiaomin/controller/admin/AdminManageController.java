@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
+/**管理员操作
  * @Author: Ming
  * @Date: 2023/2/18 23:53
  */

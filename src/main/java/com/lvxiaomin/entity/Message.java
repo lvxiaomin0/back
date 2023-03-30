@@ -1,11 +1,8 @@
 package com.lvxiaomin.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
-import java.util.Date;
 import lombok.Data;
 
 /**
@@ -16,13 +13,13 @@ import lombok.Data;
 @Data
 public class Message implements Serializable {
     /**
-     *
+     * 留言ID
      */
     @TableId(type = IdType.AUTO)
     private Long mId;
 
     /**
-     * 用户id
+     * 用户ID
      */
     private Long userId;
 
@@ -34,7 +31,13 @@ public class Message implements Serializable {
     /**
      * 时间
      */
-    private Date mTime;
+    @TableField(fill = FieldFill.INSERT)
+    private String mTime;
+
+    /**
+     * 用户昵称
+     */
+    private String mNickname;
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
@@ -54,7 +57,8 @@ public class Message implements Serializable {
         return (this.getMId() == null ? other.getMId() == null : this.getMId().equals(other.getMId()))
                 && (this.getUserId() == null ? other.getUserId() == null : this.getUserId().equals(other.getUserId()))
                 && (this.getMContent() == null ? other.getMContent() == null : this.getMContent().equals(other.getMContent()))
-                && (this.getMTime() == null ? other.getMTime() == null : this.getMTime().equals(other.getMTime()));
+                && (this.getMTime() == null ? other.getMTime() == null : this.getMTime().equals(other.getMTime()))
+                && (this.getMNickname() == null ? other.getMNickname() == null : this.getMNickname().equals(other.getMNickname()));
     }
 
     @Override
@@ -65,6 +69,7 @@ public class Message implements Serializable {
         result = prime * result + ((getUserId() == null) ? 0 : getUserId().hashCode());
         result = prime * result + ((getMContent() == null) ? 0 : getMContent().hashCode());
         result = prime * result + ((getMTime() == null) ? 0 : getMTime().hashCode());
+        result = prime * result + ((getMNickname() == null) ? 0 : getMNickname().hashCode());
         return result;
     }
 
@@ -78,6 +83,7 @@ public class Message implements Serializable {
         sb.append(", userId=").append(userId);
         sb.append(", mContent=").append(mContent);
         sb.append(", mTime=").append(mTime);
+        sb.append(", mNickname=").append(mNickname);
         sb.append(", serialVersionUID=").append(serialVersionUID);
         sb.append("]");
         return sb.toString();

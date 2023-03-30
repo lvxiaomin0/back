@@ -8,11 +8,12 @@
             <id property="mId" column="m_id" jdbcType="BIGINT"/>
             <result property="userId" column="user_id" jdbcType="BIGINT"/>
             <result property="mContent" column="m_content" jdbcType="VARCHAR"/>
-            <result property="mTime" column="m_time" jdbcType="TIMESTAMP"/>
+            <result property="mTime" column="m_time" jdbcType="VARCHAR"/>
+            <result property="mNickname" column="m_nickname" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         m_id,user_id,m_content,
-        m_time
+        m_time,m_nickname
     </sql>
 </mapper>
