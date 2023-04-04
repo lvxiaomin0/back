@@ -25,6 +25,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
         this.setFieldValByName("userTime", format,metaObject);
         this.setFieldValByName("mTime", format,metaObject);
         this.setFieldValByName("moTime", format,metaObject);
+        this.setFieldValByName("upTime", format,metaObject);
     }
 
     @Override

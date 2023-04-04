@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lvxiaomin.mapper.AdminUpMapper">
+
+    <resultMap id="BaseResultMap" type="com.lvxiaomin.entity.AdminUp">
+            <id property="upId" column="up_id" jdbcType="INTEGER"/>
+            <result property="upFileUrl" column="up_file_url" jdbcType="VARCHAR"/>
+            <result property="upTime" column="up_time" jdbcType="VARCHAR"/>
+            <result property="upFileName" column="up_file_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        up_id,up_file_url,up_time,
+        up_file_name
+    </sql>
+</mapper>

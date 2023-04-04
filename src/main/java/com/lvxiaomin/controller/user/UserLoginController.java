@@ -13,6 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.DigestUtils;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -76,10 +77,9 @@ public class UserLoginController {
      * @return
      */
     @PostMapping(value = "/get-user")
-    public AjaxJson getUser(@RequestBody UserDto userDto)  {
+    public AjaxJson getUser(@RequestBody @Validated UserDto userDto)  {
         AjaxJson userName = userService.getUserName(userDto.getUserEmail());
         return AjaxJson.getSuccess(String.valueOf(userName.getMsg()));
-
 
     }
 
