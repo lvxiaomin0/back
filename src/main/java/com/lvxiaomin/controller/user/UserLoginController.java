@@ -3,6 +3,7 @@ package com.lvxiaomin.controller.user;
 import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import com.lvxiaomin.dto.UserDto;
+import com.lvxiaomin.dto.UserGetEmailDto;
 import com.lvxiaomin.dto.UserRegisterDto;
 import com.lvxiaomin.entity.User;
 import com.lvxiaomin.service.UserService;
@@ -73,12 +74,12 @@ public class UserLoginController {
 
     /**
      * 判断邮箱是否可用
-     * @param userDto
+     * @param userGetEmailDto
      * @return
      */
     @PostMapping(value = "/get-user")
-    public AjaxJson getUser(@RequestBody @Validated UserDto userDto)  {
-        AjaxJson userName = userService.getUserName(userDto.getUserEmail());
+    public AjaxJson getUser(@RequestBody @Validated UserGetEmailDto userGetEmailDto)  {
+        AjaxJson userName = userService.getUserName(userGetEmailDto.getUserEmail());
         return AjaxJson.getSuccess(String.valueOf(userName.getMsg()));
 
     }

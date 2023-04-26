@@ -61,7 +61,9 @@ public class AttentionServiceImpl extends ServiceImpl<AttentionMapper, Attention
         if (attentionOne == null){
             int insertPoint = attentionMapper.insert(attention);
             if (insertPoint ==1 ){
+                //写入Redis
                 template.opsForValue().set("attention", String.valueOf(attention));
+
             }
 
             user.setUserFans(selectOne.getUserFans()+1);

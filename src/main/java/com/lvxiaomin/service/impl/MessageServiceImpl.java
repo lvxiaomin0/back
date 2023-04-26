@@ -48,10 +48,8 @@ public class MessageServiceImpl extends ServiceImpl<MessageMapper, Message>
      */
     @Override
     public IPage<Message> getMessage(int current,int size) {
-//        Page<Message> messagePage = new Page<>(current,size);
         IPage<Message> messagePage = new Page<>(current,size);
         IPage<Message> selectPage = messageMapper.selectPage(messagePage, null);
-//        List<Message> messageList = selectPage.getRecords();
         return selectPage;
     }
 
