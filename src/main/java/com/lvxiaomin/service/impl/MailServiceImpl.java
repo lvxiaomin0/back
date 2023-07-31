@@ -60,7 +60,7 @@ public class MailServiceImpl implements MailService {
         stringBuilder.append("<html><head><title></title></head><body>");
         stringBuilder.append("您好<br/>");
         stringBuilder.append("您的验证码是：").append(value).append("<br/>");
-        stringBuilder.append("您可以复制此验证码并返回至科研管理系统找回密码页面，以验证您的邮箱。<br/>");
+        stringBuilder.append("您可以复制此验证码并返回论坛找回密码页面，以验证您的邮箱。<br/>");
         stringBuilder.append("此验证码只能使用一次，在");
         stringBuilder.append("10");
         stringBuilder.append("分钟内有效。验证成功则自动失效。<br/>");

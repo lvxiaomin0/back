@@ -4,12 +4,12 @@ server:
 
 # Sa-Token配置
 sa-token:
-  jwt-secret-key: lvxiaomin
+  jwt-secret-key:
   # token 名称 (同时也是cookie名称)
   token-name: satoken
-  # token 有效期，单位s 默认30天, -1代表永不过期
-  timeout: 2592000
   # token 临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+  timeout: 2592000
+  # token 有效期，单位s 默认30天, -1代表永不过期
   activity-timeout: -1
   # 是否允许同一账号并发登录 (为true时允许一起登录, 为false时新登录挤掉旧登录)
   is-concurrent: true
@@ -48,15 +48,15 @@ spring:
   #163邮箱配置
   mail:
     host: smtp.163.com
-    username: lvxiaomin2021@163.com
-    password: DIVRDGQBDKKUMCPF
+    username:
+    password:
 
 
 
   #数据库配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://42.192.90.40:3306/melon?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://localhost:3306/melon?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
     username: root
     password: 81192
 
@@ -68,12 +68,12 @@ mybatis-plus:
 #腾讯云COS存储
 tencentCosUtil:
   #开发者拥有的项目身份识别 ID，用于身份认证，可在 API 密钥管理 页面获取
-  secretId: AKIDA9uQhiV4NQEm58wUmpc9RTG6i4B2e2B4
+  secretId:
   #开发者拥有的项目身份密钥，可在 API 密钥管理 页面获取
-  secretKey: g6HCrHSN3WkiRu75nFSTIsFNGtISM1QZ
+  secretKey:
   #存储桶名称格式，用户在使用 API、SDK 时，需要按照此格式填写存储桶名称
-  bucketName: "user-upload-1304472678"
+  bucketName:
   #存储桶配置管理中访问域名的URL（格式：https://bucketName.cos.所在地域（例如：ap-nanjing）.myqcloud.com/）
-  accessUrl: https://user-upload-1304472678.cos.ap-chengdu.myqcloud.com/
+  accessUrl:
 
 
